@@ -83,5 +83,5 @@ resource "snowflake_warehouse" "warehouse" {
     resource "snowflake_role_grants" "grants" {
         provider  = snowflake.security_admin
         role_name = snowflake_role.role.name
-        users     = "NRA_TF_SNOW"
+        users     = ["NRA_TF_SNOW"]
     }
